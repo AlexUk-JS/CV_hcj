@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+
+  <link rel="stylesheet" type="text/css" href="css/colors.css">
+  <link rel="stylesheet" type="text/css" href="css/textFormat.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/mobile-landscape.css">
+  <link rel="stylesheet" type="text/css" href="css/mobile-portrait.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <script defer src="js/script.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/changeLanguage.js"></script>
+  <script defer src="js/snake.js"></script>
+
+  <title>CV Page Ukhov Alexey</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header__title">
+        <p>Сайт-Резюме</p>
+      </div>
+      <div class="header__printVersion">
+
+        <a href="/pdf/CV - Ukhov Alexey - Front-end.pdf" download>Скачать резюме PDF </a>
+        <img src="/img/downloadArrow.svg" alt="arrow">
+
+      </div>
+    </div>
+
+
+    <div class="main">
+
+      <div class="main__menu">
+        <div class="main__menu__top">
+          <button class="menuButton button__choose choosed" data-chapter="intro">Описание</button>
+          <button class="menuButton button__choose" data-chapter="aboutMe">Обо мне</button>
+          <button class="menuButton button__choose" data-chapter="knowledgeStack">Стек знаний</button>
+          <button class="menuButton button__choose" data-chapter="portfolio">Портфолио</button>
+          <button class="menuButton button__choose" data-chapter="contacts">Контакты</button>
+        </div>
+        <div class="main__menu__bottom">
+          <form action="http://github.com" target="_blank">
+            <div class="button__git__back">
+              <button class="menuButton button__git__front">Код на GITHUB</button>
+            </div>
+          </form>
+          <button class="menuButton button__lng" data-chapter="lng">EN</button>
+        </div>
+      </div>
+
+
+      <div class="main__space">
+
+        <div class="main__space__intro textBlock" data-chapter="intro">
+          <!-- <div class="main__space__intro__right"> -->
+            <div class="main__space__intro__left">
+              <p>Здравствуйте!<br> 
+              Меня зовут Ухов Алексей и Вы на странице моего резюме.</p>
+              <p>Ищу работу в web-разработке на позиции junior.</p>
+              <p>Подробная информация обо мне, информация о компетенциях и релевантном опыте, примеры работ в следующих разделах.	</p>
+              <p>Скачать версию для печати можно в правом верхнем углу сайта.</p>
+            </div>
+            
+            <div class="main__space__intro__right">
+              <img src="/img/me.jpg" alt="Ukhov Photo Img">
+            </div>
+
+           
+          <!-- </div> -->
+          <!-- <div class="main__space__intro__bottom">
+            <p>Примеры работ можно посмотреть в разделе Портфолио. Стек знаний можно оценить в соответствующем разделе.
+            </p>
+            <p>Если же Вы dev, то сразу велкам на мой GITHUB)</p>
+            <p>Благодарю за посещение моей страницы!</p>
+          </div> -->
+        </div>
+
+        <div class="main__space__aboutMe textBlock hidden" data-chapter="aboutMe">
+          <p>Немного обо мне..</p>
+          <p>Окончил Радиотехнический факультет УрФУ. Учился в аспирантуре.</p>
+          <p>В настоящее время работаю там же старшим преподавателем департамента.</p>
+          <p>Решил развиваться в направлении frontend.</p>
+          <p>Прошел курс на Geekbrains по web-программированию.</p>
+          <p>В текущий момент ищу вакансии или стажировки (в зависимости от работадателя) с возможностью
+            последующего трудоустройства.</p>
+        </div>
+
+        <div class="main__space__knowledgeStack textBlock hidden" data-chapter="knowledgeStack">
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              HTML
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Верстка</li>
+                <li>HTML 5 </li>
+                <li>Разметка</li>
+                <li>Семантика</li>
+                <li>Стили</li>
+                <li>Селекторы</li>
+                <li>Анимация</li>
+                <li>DOM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              CSS и препроцессоры
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Селекторы</li>
+                <li>SASS/SCSS / Less</li>
+                <li>Переменные</li>
+                <li>Миксины</li>
+                <li>Функции</li>
+                <li>Импорт</li>
+                <li>Минификация</li>
+                <li>БЭМ</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              Принципы программирования
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>DRY</li>
+                <li>KISS</li>
+                <li>YAGNI</li>
+                <li>SOLID</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              JavaScript
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Переменные</li>
+                <li>Типы данных</li>
+                <li>Функции</li>
+                <li>Рекурсия</li>
+                <li>Замыкания</li>
+                <li>Области видимости</li>
+                <li>Объекты</li>
+                <li>Массивы</li>
+                <li>События</li>
+                <li>Асинхронность</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              Регулярные выражения
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Кватификация</li>
+                <li>Жадность</li>
+                <li>Группировка</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              Функциональное программирование
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Абстракции данных</li>
+                <li>Функции высшего порядка</li>
+                <li>Чистые функции </li>
+                <li>Рекурсия</li>
+                <li>Замыкания</li>
+                <li>Неизменяемый объект</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              ООП
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Классы</li>
+                <li>Объекты</li>
+                <li>Абстракции данных</li>
+                <li>Инкапсуляция</li>
+                <li>Наследование</li>
+                <li>Полиморфизм</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              Адаптивный веб-дизайн
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Адаптивный веб-дизайн</li>
+                <li>Отзывчивый веб-дизайн</li>
+                <li>Media queries</li>
+                <li>Mobile first</li>
+                <li>Graceful degradation</li>
+                <li>RESS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              GIT
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Структура</li>
+                <li>Ветвления</li>
+                <li>Слияние</li>
+                <li>Конфликты и их разрешение</li>
+                <li>Версии проекта</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              Стек программ и интерфейсов
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>VS Code</li>
+                <li>WebStorm</li>
+                <li>Sublime text</li>
+                <li>Brackets</li>
+                <li>Figma</li>
+                <li>Miro</li>
+                <li>GIThub</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              ***
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>SR1</li>
+                <li>SR2</li>
+                <li>SR3</li>
+                <li>SR1</li>
+                <li>SR2</li>
+                <li>SR3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__space__knowledgeStack__block">
+            <div class="main__space__knowledgeStack__block__header">
+              Методы оптимизации времени
+            </div>
+            <div class="main__space__knowledgeStack__block__list">
+              <ul>
+                <li>Помидора</li>
+                <li>Парето</li>
+                <li>Альп</li>
+                <li>Эйзкехауэра</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main__space__portfolio textBlock hidden" data-chapter="portfolio">
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4 p-3 text-center" style="max-width: 250px">
+                <img src="/img/Project-1.png" class="img-fluid rounded-start" alt="...">
+                <button type="button" class="btn btn-light mt-3 w-75 portfolioButton" disabled>
+                  Вы сейчас на нем
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Страница резюме</h5>
+                  <p class="card-text">Применяемые технологии: <br>
+                    HTML / SASS / JavaScript / Bootstrap</p>
+                  <p class="card-text">Описание:<br>
+                    Часть одинаковых блоков проекта написана разными способами, чтобы продемонстрировать понимание
+                    разных подходов.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4 p-3 text-center" style="max-width: 250px">
+                <img src="/img/Project-2.png" class="img-fluid rounded-start" alt="...">
+                <a href="http://interior-olly.com" class="btn btn-light mt-3 w-75 portfolioButton"
+                  target="_blank">Посмотреть</a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт дизайнера интерьера <br> (Cделан для реального Заказчика)</h5>
+                  <p class="card-text">Применяемые технологии: <br>
+                    HTML / SASS / JavaScript / Bootstrap</p>
+                  <p class="card-text">Описание:<br>
+                    Сайт является сданым проектом для реального Заказчика.<br>
+                    Задание включало часть дизайна интерфейса в Figma и устные пожелания по ходу реализации.<br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4 p-3 text-center" style="max-width: 250px">
+                <img src="/img/Project-3.png" class="img-fluid rounded-start" alt="...">
+                <button type="button" class="btn btn-light mt-3 w-75 portfolioButton" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  Посмотреть
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Игра "Змейка" <br>(Cделана с помощью Canvas)</h5>
+                  <p class="card-text">Применяемые технологии: <br>
+                    Модальные окна Bootstrap и Canvas.</p>
+                  <p class="card-text">Описание: <br>
+                    Пример создании игры на Javascript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="main__space__contacts textBlock hidden" data-chapter="contacts">
+          <div> <b> По всем вопросам со мной можно связаться:</b> </div>
+
+          <div>
+            <p> <span class="#">По почте:</span> <a href="mailto:me@alexuk.ru">me@alexuk.ru</a></p>
+            <p> <span class="#">По телефону:</span> <a href="tel:+79122198108">8-9122-198-108</a></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Ukhov Alexey CV page<br>
+      <span class="lng-contactsText"> </span><a href="me@alexuk.ru">me@alexuk.ru</a></p>
+  </div>
+
+  <!-- MODAL and off-structure -->
+  <!-- Game Snake Modal *** top -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Игра "Змейка"</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <canvas id="game"></canvas>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary" id="button__snakeStart">Старт</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Game Snake Modal *** bottom -->
+
+
+
+</body>
+
+</html>

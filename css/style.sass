@@ -1,0 +1,156 @@
+@import "colors.sass"
+@import "textFormat.sass"
+@import "animation.sass"
+
+.modal-dialog
+    width: 643px
+
+*
+    margin: 0
+    padding: 0
+
+.wrapper
+    margin: 0 auto
+    width: 80%
+    min-height: calc(100vh - 107px)
+
+
+.header
+    margin-top: 3em
+    display: flex
+    justify-content: space-between
+    &__title
+        >p
+        @include headerTitle
+    &__printVersion
+        >a
+            @include printVersion
+            color: $--linkColor
+        >img
+            vertical-align: sub
+
+.main
+    position: relative
+    display: flex
+    margin-top: 35px
+    
+    &__menu
+        width: 12em
+        &__bottom
+            margin-top: 6em
+    &__space
+        padding-left: 2.5em
+        width: calc(100% - 12em)
+        &__intro
+            @include intro
+            display: flex
+            justify-content: space-around
+            &__left
+
+            &__right 
+                display: 
+                padding: 0 0 1em 1em
+                >img
+                    width: 15em
+                    min-width: 200px
+                    border-radius: 10px
+        &__aboutMe
+            >p
+                @include aboutMe
+                margin-bottom: 1em
+        &__knowledgeStack
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            &__block
+                width: calc(100%/3)
+                min-width: 230px
+                &__header
+                    @include knowledgeStackHeading
+                    height: 3em
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                &__list
+                    @include knowledgeStackUL
+    
+        &__contacts
+            @include contacts
+            margin-top: 5em  
+            a
+                color: black 
+            >div
+                display: flex
+                justify-content: space-around
+                margin-bottom: 1em
+        
+.menuButton
+    @include menuButton
+    background-color: #fff
+    display: block
+    width: 100%
+    text-align: left
+    border: none
+
+.button
+    &__choose    
+        &:hover
+            background: linear-gradient(269.03deg, #bababa 0%, rgba(217, 217, 217, 0) 100%)
+            border-radius: 0px 10px 0px 0px
+    &__git
+        &__back:hover
+            background: linear-gradient(269.03deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%)
+            border-radius: 0px 10px 0px 0px !important
+        &__front:hover 
+            background: linear-gradient(45deg, #ff40b6 22.83%, #86117A 100%)
+            -webkit-background-clip: text !important
+            -webkit-text-fill-color: transparent !important
+            background-clip: text !important
+            text-fill-color: transparent !important
+            animation: gitHubButton 3s ease infinite
+    &__lng
+        &:hover
+            font-weight: 500
+
+@keyframes gitHubButton
+    from
+        background: #ff40b6 
+    50%
+        background: #86117A 
+    to
+        background: #ff40b6
+    
+.buttonChoosed
+    background: linear-gradient(269.03deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%)
+    border-radius: 0px 10px 0px 0px
+
+.portfolioButton
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%)
+    border: 1px solid #B2B2B2
+    border-radius: 5px
+
+.footer
+    background-color: $--footer-bgc
+    color: $--footer-tc
+    text-align: center
+    border-radius: 0 0 10px 10px
+    width: 80%
+    margin: 0 auto
+    >p
+        padding-top: 0.3em
+        padding-bottom: 0.3em
+        margin: 0
+        font-weight: 100
+        >a
+            text-decoration-line: none
+            color: $--footer-tc
+
+.hidden
+    display: none!important
+
+
+            
+
+
+

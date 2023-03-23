@@ -1,0 +1,265 @@
+.modal-dialog {
+  width: 643px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  min-height: calc(100vh - 107px);
+}
+
+.header {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 57px;
+}
+
+.header__printVersion > a {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 57px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #000;
+}
+
+.header__printVersion > img {
+  vertical-align: sub;
+}
+
+.main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+}
+
+.main__menu {
+  width: 12em;
+}
+
+.main__menu__bottom {
+  margin-top: 6em;
+}
+
+.main__space {
+  padding-left: 2.5em;
+  width: calc(100% - 12em);
+}
+
+.main__space__intro {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main__space__intro__right {
+  padding: 0 0 1em 1em;
+}
+
+.main__space__intro__right > img {
+  width: 15em;
+  min-width: 200px;
+  border-radius: 10px;
+}
+
+.main__space__aboutMe > p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 27px;
+  margin-bottom: 1em;
+}
+
+.main__space__knowledgeStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__space__knowledgeStack__block {
+  width: calc(100%/3);
+  min-width: 230px;
+}
+
+.main__space__knowledgeStack__block__header {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 27px;
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.main__space__knowledgeStack__block__list {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 22px;
+}
+
+.main__space__contacts {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 27px;
+  margin-top: 5em;
+}
+
+.main__space__contacts a {
+  color: black;
+}
+
+.main__space__contacts > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.menuButton {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 33px;
+  text-transform: uppercase;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.button__choose:hover {
+  background: linear-gradient(269.03deg, #bababa 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 0px 10px 0px 0px;
+}
+
+.button__git__back:hover {
+  background: linear-gradient(269.03deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 0px 10px 0px 0px !important;
+}
+
+.button__git__front:hover {
+  background: linear-gradient(45deg, #ff40b6 22.83%, #86117A 100%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent !important;
+  -webkit-animation: gitHubButton 3s ease infinite;
+          animation: gitHubButton 3s ease infinite;
+}
+
+.button__lng:hover {
+  font-weight: 500;
+}
+
+@-webkit-keyframes gitHubButton {
+  from {
+    background: #ff40b6;
+  }
+  50% {
+    background: #86117A;
+  }
+  to {
+    background: #ff40b6;
+  }
+}
+
+@keyframes gitHubButton {
+  from {
+    background: #ff40b6;
+  }
+  50% {
+    background: #86117A;
+  }
+  to {
+    background: #ff40b6;
+  }
+}
+
+.buttonChoosed {
+  background: linear-gradient(269.03deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 0px 10px 0px 0px;
+}
+
+.portfolioButton {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D9D9D9), to(rgba(217, 217, 217, 0)));
+  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  border: 1px solid #B2B2B2;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #d9d9d973;
+  color: #B2B2B2;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer > p {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin: 0;
+  font-weight: 100;
+}
+
+.footer > p > a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #B2B2B2;
+}
+
+.hidden {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */
